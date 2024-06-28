@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* animation */
+.roller{
+    position: absolute;
+    width: 30px; height: 30px;
+    background: red;
+    background-blend-mode: multiply;
+    border-radius: 50%;
+    top: 50vh;
+    left: 30%;
+    animation:  role 1s linear infinite;
+    display: none;
+}
+
+@keyframes role{
+    0%{ 
+        left: 30%;
+        background: red;
+    }
+    50%{
+        background: rgb(255, 230, 0);
+        left: 70%; 
+    }
+    100%{ 
+        background: red;
+        left: 30%; 
+    }
+}
